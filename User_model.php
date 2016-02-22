@@ -28,7 +28,7 @@ Class Usuarios_model extends CI_Model
 
         return $this->db->insert('usuario', $data);
     }
-    /* checks if validation  exist in database*/
+    /* checks if validation code exists in database*/
     public function get_validarCod($codigo)
     {
         $data['estatus']=1;        
@@ -38,7 +38,7 @@ Class Usuarios_model extends CI_Model
         return $this->db->update('usuario', $data);
     }
     
-    /* udate user information*/
+    /* update user information*/
     public function update($data){
         /*$data['id']=$this->input->post("id");
         $data['username']=$this->input->post("username");
